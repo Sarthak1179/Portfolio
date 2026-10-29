@@ -1,0 +1,2501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Command Center & High-Performance Portfolio of Sarthak Chaudhary - Senior Systems Architect, Creative Technologist & Full-Stack Engineer.">
+  <meta name="keywords" content="portfolio, systems architect, creative developer, 3D CSS, life dashboard, performance analytics">
+  <meta name="author" content="Sarthak Chaudhary">
+  <title>Command Center // Sarthak Chaudhary — Portfolio & Performance Dashboard</title>
+
+  <!-- Google Fonts: Space Grotesk (Headings), Inter (Body), JetBrains Mono (Data & Code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dynamic Atmospheric Live Background (Pure CSS Motion) -->
+  <div class="live-background-ambient" aria-hidden="true">
+    <div class="ambient-orb ambient-orb-cyan"></div>
+    <div class="ambient-orb ambient-orb-violet"></div>
+    <div class="ambient-orb ambient-orb-blue"></div>
+    <div class="ambient-grid-layer"></div>
+    <div class="ambient-mesh-glow"></div>
+  </div>
+
+  <!-- Ambient CRT Scanline Effect (Pure CSS Decorative) -->
+  <div class="scanline-overlay" aria-hidden="true"></div>
+
+  <!-- Hidden Checkbox for CSS-Only Sidebar Toggle -->
+  <input type="checkbox" id="sidebar-toggle" aria-label="Toggle Command Sidebar">
+
+  <div class="command-center-app">
+
+    <!-- ====================================================================
+         LEFT NAVIGATION SIDEBAR (Fixed / Sticky Command Dock)
+         ==================================================================== -->
+    <aside class="command-sidebar" aria-label="Command Center Navigation">
+      
+      <!-- Brand & Collapsible Header -->
+      <div class="sidebar-header">
+        <a href="#hero" class="brand-badge" title="Go to Home / Hero">
+          <div class="brand-icon-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <div class="brand-title-wrap">
+            <span class="brand-title">CHAUDHARY</span>
+            <span class="brand-sub">NEXUS // OS v4.8</span>
+          </div>
+        </a>
+
+        <!-- CSS-Only Sidebar Collapse Toggle -->
+        <label for="sidebar-toggle" class="sidebar-collapse-btn" title="Toggle Compact Sidebar" aria-label="Collapse Sidebar">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </label>
+      </div>
+
+      <!-- Navigation Section -->
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">Core Operations</div>
+
+        <!-- 1. Overview -->
+        <a href="#overview" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="7" height="9"></rect>
+              <rect x="14" y="3" width="7" height="5"></rect>
+              <rect x="14" y="12" width="7" height="9"></rect>
+              <rect x="3" y="16" width="7" height="5"></rect>
+            </svg>
+          </span>
+          <span class="nav-label">Overview</span>
+          <span class="nav-counter">01</span>
+        </a>
+
+        <!-- 2. About Me -->
+        <a href="#about" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </span>
+          <span class="nav-label">About Me</span>
+          <span class="nav-counter">02</span>
+        </a>
+
+        <!-- 3. Skills -->
+        <a href="#skills" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </span>
+          <span class="nav-label">Skills</span>
+          <span class="nav-counter">42</span>
+        </a>
+
+        <!-- 4. Projects -->
+        <a href="#projects" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M16.5 9.4 7.55 4.24a1.78 1.78 0 0 0-2.5 1.55v12.42a1.78 1.78 0 0 0 2.5 1.55L16.5 14.6a1.78 1.78 0 0 0 0-3.2z"></path>
+              <circle cx="12" cy="12" r="10"></circle>
+            </svg>
+          </span>
+          <span class="nav-label">Projects</span>
+          <span class="nav-counter">06</span>
+        </a>
+
+        <div class="nav-section-label">Performance & Growth</div>
+
+        <!-- 5. Goals -->
+        <a href="#goals" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+            </svg>
+          </span>
+          <span class="nav-label">Goals</span>
+          <span class="nav-counter">28</span>
+        </a>
+
+        <!-- 6. Achievements -->
+        <a href="#achievements" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+              <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+              <path d="M4 22h16"></path>
+              <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+              <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+              <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+            </svg>
+          </span>
+          <span class="nav-label">Achievements</span>
+          <span class="nav-counter">18</span>
+        </a>
+
+        <!-- 7. Performance Analytics -->
+        <a href="#analytics" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+          </span>
+          <span class="nav-label">Analytics</span>
+          <span class="nav-counter">Live</span>
+        </a>
+
+        <!-- 8. Comparisons -->
+        <a href="#comparisons" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </span>
+          <span class="nav-label">Comparisons</span>
+          <span class="nav-counter">YoY</span>
+        </a>
+
+        <div class="nav-section-label">Transmission</div>
+
+        <!-- 9. Contact -->
+        <a href="#contact" class="nav-item">
+          <span class="nav-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </span>
+          <span class="nav-label">Contact</span>
+          <span class="nav-counter">SSL</span>
+        </a>
+      </nav>
+
+      <!-- Sidebar Footer: System Telemetry Capsule -->
+      <div class="sidebar-footer">
+        <div class="sys-telemetry-box">
+          <div class="sys-row">
+            <span class="sys-label">NODE STATUS:</span>
+            <span class="sys-val online">ACTIVE</span>
+          </div>
+          <div class="sys-row">
+            <span class="sys-label">UPTIME:</span>
+            <span class="sys-val">99.98%</span>
+          </div>
+          <div class="sys-row">
+            <span class="sys-label">LATENCY:</span>
+            <span class="sys-val">14ms</span>
+          </div>
+          <div class="sys-row">
+            <span class="sys-label">CLEARANCE:</span>
+            <span class="sys-val">LEVEL 5</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ====================================================================
+         MAIN VIEWPORT
+         ==================================================================== -->
+    <main class="main-viewport">
+
+      <!-- TOP COMMAND HEADER & PROFILE AREA -->
+      <header class="top-command-header">
+        
+        <!-- Left: Status Beacon & Hardware Telemetry -->
+        <div class="header-status-left">
+          <div class="system-status-pill">
+            <span class="status-dot-pulse"></span>
+            <span>SYSTEM ONLINE // OPEN FOR COLLABORATION</span>
+          </div>
+
+          <div class="header-metric-ticker">
+            <div class="ticker-item">
+              <span>LOC:</span>
+              <span class="ticker-val">37.77° N, 122.41° W</span>
+            </div>
+            <div class="ticker-item">
+              <span>ENV:</span>
+              <span class="ticker-val">PROD // Q4_STABLE</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Profile Area (Identity, Title, Avatar, Socials) -->
+        <div class="header-profile-card">
+          <div class="profile-avatar-wrap">
+            <img src="assets/images/profile-avatar.jpg" alt="Photograph of Sarthak Chaudhary" class="profile-avatar-img">
+            <span class="avatar-status-badge" title="Status: Online & Ready"></span>
+          </div>
+
+          <div class="profile-meta-wrap">
+            <div class="profile-name">SARTHAK CHAUDHARY</div>
+            <div class="profile-role">Staff Systems Architect & Creative Technologist</div>
+          </div>
+
+          <!-- Social Links Dock -->
+          <div class="profile-social-dock">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="X (Twitter) Feed">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+              </svg>
+            </a>
+            <a href="#contact" class="social-icon-btn" title="Direct Transmission Form">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M22 2L11 13"></path>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </header>
+
+      <!-- ====================================================================
+           HERO SECTION & 3D CSS GRAPHICAL STRUCTURE
+           ==================================================================== -->
+      <section id="hero" class="hero-command-zone">
+        
+        <!-- 3D CSS Hardware-Accelerated Graphical Engine -->
+        <div class="scene-3d-wrapper" aria-hidden="true">
+          <div class="viewport-3d-rig">
+            
+            <!-- Layer 1: Perspective Grid Floor -->
+            <div class="hologram-grid-plane"></div>
+
+            <!-- Layer 2: Ambient Glowing Light Orbs -->
+            <div class="orb-glow-1"></div>
+            <div class="orb-glow-2"></div>
+
+            <!-- Layer 3: Rotational Gyroscope Rings -->
+            <div class="gyro-ring-outer"></div>
+            <div class="gyro-ring-middle"></div>
+            <div class="gyro-ring-inner"></div>
+
+            <!-- Radar Sweep Beam -->
+            <div class="radar-sweep-beam"></div>
+
+            <!-- Concentric Circular Outlines -->
+            <div class="concentric-ring-pulse ring-pulse-1"></div>
+            <div class="concentric-ring-pulse ring-pulse-2"></div>
+
+            <!-- Orbital Tracks & Satellites -->
+            <div class="orbital-track track-1">
+              <div class="orbital-satellite sat-1"></div>
+            </div>
+            <div class="orbital-track track-2">
+              <div class="orbital-satellite sat-2"></div>
+            </div>
+
+            <!-- Layer 4: Central 3D Floating Isometric Hypercube (6 Faces) -->
+            <div class="polyhedron-3d-core">
+              <div class="cube-face cube-face-front"></div>
+              <div class="cube-face cube-face-back"></div>
+              <div class="cube-face cube-face-right"></div>
+              <div class="cube-face cube-face-left"></div>
+              <div class="cube-face cube-face-top"></div>
+              <div class="cube-face cube-face-bottom"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Foreground Hero Content Cluster -->
+        <div class="hero-content-cluster">
+          <div class="hero-tag-badge">
+            <span class="status-dot-pulse"></span>
+            <span>PERSONAL COMMAND CENTER // OS v4.8</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Architecting <span class="headline-gradient">Distributed Systems</span>, High-Performance UI & Autonomous AI Pipelines
+          </h1>
+
+          <p class="hero-subtitle">
+            Senior Technologist blending rigorous systems engineering, 3D web experiences, and continuous quantitative life optimization.
+          </p>
+
+          <p class="hero-description">
+            Operating at the convergence of resilient cloud infrastructure, reactive interface architecture, and disciplined personal performance tracking. Welcome to my operational matrix.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-cyber-primary">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>Explore My Work</span>
+            </a>
+            <a href="#achievements" class="btn-cyber-secondary">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <span>View Achievements</span>
+            </a>
+            <a href="#contact" class="btn-cyber-outline">
+              <span>Terminal Transmission &rarr;</span>
+            </a>
+          </div>
+
+          <!-- Hero Highlights / Key Statistics Band -->
+          <div class="hero-stats-band">
+            <div class="hero-stat-cell">
+              <span class="hero-stat-num">8+ Yrs</span>
+              <span class="hero-stat-lbl">Systems Mastery</span>
+            </div>
+            <div class="hero-stat-cell">
+              <span class="hero-stat-num">48+</span>
+              <span class="hero-stat-lbl">Prod Releases</span>
+            </div>
+            <div class="hero-stat-cell">
+              <span class="hero-stat-num">99.99%</span>
+              <span class="hero-stat-lbl">Service SLA</span>
+            </div>
+            <div class="hero-stat-cell">
+              <span class="hero-stat-num">1,450+</span>
+              <span class="hero-stat-lbl">Annual Commits</span>
+            </div>
+            <div class="hero-stat-cell">
+              <span class="hero-stat-num">$18M+</span>
+              <span class="hero-stat-lbl">Value Engineered</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           DASHBOARD CONTENT STREAM (Long, Rich, Multi-Section)
+           ==================================================================== -->
+      <div class="dashboard-content-stream">
+
+        <!-- ==================================================================
+             SECTION 1: OVERVIEW DASHBOARD
+             ================================================================== -->
+        <section id="overview" class="section-wrapper">
+          
+          <div class="section-header-block">
+            <div class="section-title-wrap">
+              <div class="section-eyebrow">Operational Matrix</div>
+              <h2 class="section-heading">Overview Dashboard</h2>
+              <p class="section-desc">Comprehensive real-time telemetry across engineering deliverables, knowledge velocity, and personal performance milestones.</p>
+            </div>
+            <span class="section-meta-tag">CYCLE // 2026.Q4</span>
+          </div>
+
+          <!-- A. General Performance Overview (6 Metric Cards) -->
+          <div class="metrics-grid-hex">
+            
+            <!-- Card 1: Overall Progress -->
+            <div class="metric-card-3d">
+              <div class="metric-card-header">
+                <div class="metric-icon-box">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                  </svg>
+                </div>
+                <span class="metric-badge-tag">+6.2% MoM</span>
+              </div>
+              <div class="metric-body">
+                <div>
+                  <div class="metric-value">88.4%</div>
+                  <div class="metric-title">Overall Annual Progress</div>
+                </div>
+              </div>
+              <p class="metric-desc">Ahead of schedule across core infrastructure deliverables and intellectual development roadmap.</p>
+              <div class="css-progress-track">
+                <div class="css-progress-fill" style="width: 88.4%;"></div>
+              </div>
+            </div>
+
+            <!-- Card 2: Goals Completed -->
+            <div class="metric-card-3d">
+              <div class="metric-card-header">
+                <div class="metric-icon-box">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                </div>
+                <span class="metric-badge-tag">24 of 28 OKRs</span>
+              </div>
+              <div class="metric-body">
+                <div>
+                  <div class="metric-value">85.7%</div>
+                  <div class="metric-title">Goals Completed</div>
+                </div>
+              </div>
+              <p class="metric-desc">24 of 28 strategic objectives completed; remaining 4 currently active in final validation sprint.</p>
+              <div class="css-progress-track">
+                <div class="css-progress-fill" style="width: 85.7%;"></div>
+              </div>
+            </div>
+
+            <!-- Card 3: Achievements Earned -->
+            <div class="metric-card-3d">
+              <div class="metric-card-header">
+                <div class="metric-icon-box">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <span class="metric-badge-tag">Tier 1 Accolades</span>
+              </div>
+              <div class="metric-body">
+                <div>
+                  <div class="metric-value">18</div>
+                  <div class="metric-title">Achievements Earned</div>
+                </div>
+              </div>
+              <p class="metric-desc">Including 3 hackathon grand prizes, 4 industry certifications, and 2 open-source fellowship honors.</p>
+              <div class="css-progress-track">
+                <div class="css-progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <!-- Card 4: Projects Completed -->
+            <div class="metric-card-3d">
+              <div class="metric-card-header">
+                <div class="metric-icon-box">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <span class="metric-badge-tag">32 Systems</span>
+              </div>
+              <div class="metric-body">
+                <div>
+                  <div class="metric-value">32</div>
+                  <div class="metric-title">Projects Completed</div>
+                </div>
+              </div>
+              <p class="metric-desc">Spanning distributed edge clouds, autonomous AI agent graph engines, and high-FPS web consoles.</p>
+              <div class="css-progress-track">
+                <div class="css-progress-fill" style="width: 94%;"></div>
+              </div>
+            </div>
+
+            <!-- Card 5: Skills Developed -->
+            <div class="metric-card-3d">
+              <div class="metric-card-header">
+                <div class="metric-icon-box">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <span class="metric-badge-tag">Mastery Index</span>
+              </div>
+              <div class="metric-body">
+                <div>
+                  <div class="metric-value">42</div>
+                  <div class="metric-title">Skills Developed</div>
+                </div>
+              </div>
+              <p class="metric-desc">Core competencies across low-level concurrency, cloud orchestration, 3D shader math, and AI tuning.</p>
+              <div class="css-progress-track">
+                <div class="css-progress-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <!-- Card 6: Current Learning Streak -->
+            <div class="metric-card-3d">
+              <div class="metric-card-header">
+                <div class="metric-icon-box">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+                <span class="metric-badge-tag">Unbroken</span>
+              </div>
+              <div class="metric-body">
+                <div>
+                  <div class="metric-value">314d</div>
+                  <div class="metric-title">Active Learning Streak</div>
+                </div>
+              </div>
+              <p class="metric-desc">Consecutive days of intentional deep work, research paper analysis, and production engineering.</p>
+              <div class="css-progress-track">
+                <div class="css-progress-fill" style="width: 86%;"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- B. Main Performance Graphs Matrix (100% Pure CSS) -->
+          <div class="graphs-master-grid">
+            
+            <!-- Graph 1: Progress Over Time (Line Chart Graphic) -->
+            <div class="graph-card graph-col-8">
+              <div class="graph-card-header">
+                <div class="graph-title">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                  </svg>
+                  <span>1. Progress Over Time // Engineering Velocity</span>
+                </div>
+                <div class="graph-legend">
+                  <span><span class="legend-dot dot-cyan"></span> Output Index (2026)</span>
+                  <span><span class="legend-dot dot-violet"></span> Baseline Target</span>
+                </div>
+              </div>
+
+              <!-- Pure SVG Vector Graphic with CSS Gradients & Tooltip Points -->
+              <div class="line-chart-visual">
+                <div class="chart-svg-wrap">
+                  <svg viewBox="0 0 700 190" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="cyanVioletGradient" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.45" />
+                        <stop offset="70%" stop-color="#8b5cf6" stop-opacity="0.1" />
+                        <stop offset="100%" stop-color="#06080e" stop-opacity="0" />
+                      </linearGradient>
+                      <linearGradient id="lineStrokeGrad" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0%" stop-color="#00f0ff" />
+                        <stop offset="60%" stop-color="#38bdf8" />
+                        <stop offset="100%" stop-color="#a78bfa" />
+                      </linearGradient>
+                    </defs>
+
+                    <!-- Horizontal Grid Guidelines -->
+                    <line x1="0" y1="40" x2="700" y2="40" class="svg-grid-line" />
+                    <line x1="0" y1="90" x2="700" y2="90" class="svg-grid-line" />
+                    <line x1="0" y1="140" x2="700" y2="140" class="svg-grid-line" />
+
+                    <!-- Shaded Area -->
+                    <polygon points="0,180 0,140 60,130 130,115 200,125 270,95 340,75 410,85 480,50 550,60 620,35 700,20 700,180" class="svg-area-fill" />
+
+                    <!-- Main Progress Polyline -->
+                    <polyline points="0,140 60,130 130,115 200,125 270,95 340,75 410,85 480,50 550,60 620,35 700,20" class="svg-chart-line" />
+
+                    <!-- Interactive Data Points -->
+                    <circle cx="60" cy="130" r="5" class="svg-point" title="Jan: Score 48"><title>Jan: Score 48</title></circle>
+                    <circle cx="130" cy="115" r="5" class="svg-point" title="Feb: Score 56"><title>Feb: Score 56</title></circle>
+                    <circle cx="200" cy="125" r="5" class="svg-point" title="Mar: Score 52"><title>Mar: Score 52</title></circle>
+                    <circle cx="270" cy="95" r="5" class="svg-point" title="Apr: Score 68"><title>Apr: Score 68</title></circle>
+                    <circle cx="340" cy="75" r="5" class="svg-point" title="May: Score 79"><title>May: Score 79</title></circle>
+                    <circle cx="410" cy="85" r="5" class="svg-point" title="Jun: Score 74"><title>Jun: Score 74</title></circle>
+                    <circle cx="480" cy="50" r="5" class="svg-point" title="Jul: Score 88"><title>Jul: Score 88</title></circle>
+                    <circle cx="550" cy="60" r="5" class="svg-point" title="Aug: Score 84"><title>Aug: Score 84</title></circle>
+                    <circle cx="620" cy="35" r="5" class="svg-point" title="Sep: Score 92"><title>Sep: Score 92</title></circle>
+                    <circle cx="700" cy="20" r="5" class="svg-point" title="Oct: Score 98 (Current Peak)"><title>Oct: Score 98 (Current Peak)</title></circle>
+                  </svg>
+                </div>
+                <div class="chart-axis-labels">
+                  <span>JAN</span>
+                  <span>FEB</span>
+                  <span>MAR</span>
+                  <span>APR</span>
+                  <span>MAY</span>
+                  <span>JUN</span>
+                  <span>JUL</span>
+                  <span>AUG</span>
+                  <span>SEP</span>
+                  <span>OCT (CURRENT)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Graph 2: Skill Distribution (Horizontal Bar Chart) -->
+            <div class="graph-card graph-col-4">
+              <div class="graph-card-header">
+                <div class="graph-title">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <line x1="21" y1="10" x2="3" y2="10"></line>
+                    <line x1="21" y1="6" x2="3" y2="6"></line>
+                    <line x1="21" y1="14" x2="3" y2="14"></line>
+                    <line x1="21" y1="18" x2="3" y2="18"></line>
+                  </svg>
+                  <span>2. Skill Distribution</span>
+                </div>
+                <span class="metric-badge-tag">5 Pillars</span>
+              </div>
+
+              <div class="horizontal-bars-container">
+                <div class="hbar-row">
+                  <div class="hbar-labels">
+                    <span>System Architecture</span>
+                    <span class="hbar-val">96%</span>
+                  </div>
+                  <div class="hbar-track">
+                    <div class="hbar-fill" style="width: 96%;"></div>
+                  </div>
+                </div>
+
+                <div class="hbar-row">
+                  <div class="hbar-labels">
+                    <span>Frontend & 3D CSS</span>
+                    <span class="hbar-val">94%</span>
+                  </div>
+                  <div class="hbar-track">
+                    <div class="hbar-fill" style="width: 94%;"></div>
+                  </div>
+                </div>
+
+                <div class="hbar-row">
+                  <div class="hbar-labels">
+                    <span>Distributed Edge & Cloud</span>
+                    <span class="hbar-val">91%</span>
+                  </div>
+                  <div class="hbar-track">
+                    <div class="hbar-fill" style="width: 91%;"></div>
+                  </div>
+                </div>
+
+                <div class="hbar-row">
+                  <div class="hbar-labels">
+                    <span>Autonomous AI Pipelines</span>
+                    <span class="hbar-val">88%</span>
+                  </div>
+                  <div class="hbar-track">
+                    <div class="hbar-fill" style="width: 88%;"></div>
+                  </div>
+                </div>
+
+                <div class="hbar-row">
+                  <div class="hbar-labels">
+                    <span>DevOps & Concurrency</span>
+                    <span class="hbar-val">85%</span>
+                  </div>
+                  <div class="hbar-track">
+                    <div class="hbar-fill" style="width: 85%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Graph 3: Goal Completion (Circular Progress Rings) -->
+            <div class="graph-card graph-col-6">
+              <div class="graph-card-header">
+                <div class="graph-title">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                  </svg>
+                  <span>3. Goal Completion Indicators</span>
+                </div>
+                <span class="metric-badge-tag">Conic Meters</span>
+              </div>
+
+              <div class="circular-rings-cluster">
+                <!-- Ring 1 -->
+                <div class="conic-ring-box">
+                  <div class="conic-ring" style="background: conic-gradient(var(--cyan-primary) 0% 94%, rgba(255,255,255,0.06) 94% 100%);">
+                    <span class="conic-ring-val">94%</span>
+                  </div>
+                  <span class="conic-ring-label">Technical Mastery</span>
+                </div>
+
+                <!-- Ring 2 -->
+                <div class="conic-ring-box">
+                  <div class="conic-ring" style="background: conic-gradient(var(--violet-primary) 0% 88%, rgba(255,255,255,0.06) 88% 100%);">
+                    <span class="conic-ring-val">88%</span>
+                  </div>
+                  <span class="conic-ring-label">Architecture Labs</span>
+                </div>
+
+                <!-- Ring 3 -->
+                <div class="conic-ring-box">
+                  <div class="conic-ring" style="background: conic-gradient(var(--emerald-status) 0% 92%, rgba(255,255,255,0.06) 92% 100%);">
+                    <span class="conic-ring-val">92%</span>
+                  </div>
+                  <span class="conic-ring-label">Open Source</span>
+                </div>
+
+                <!-- Ring 4 -->
+                <div class="conic-ring-box">
+                  <div class="conic-ring" style="background: conic-gradient(var(--amber-warn) 0% 82%, rgba(255,255,255,0.06) 82% 100%);">
+                    <span class="conic-ring-val">82%</span>
+                  </div>
+                  <span class="conic-ring-label">Physical Focus</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Graph 4: Achievement Distribution (Vertical Bar Chart) -->
+            <div class="graph-card graph-col-6">
+              <div class="graph-card-header">
+                <div class="graph-title">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 20v-6M6 20V10M18 20V4"></path>
+                  </svg>
+                  <span>4. Achievement Distribution</span>
+                </div>
+                <span class="metric-badge-tag">Category Counts</span>
+              </div>
+
+              <div class="column-chart-display">
+                <div class="chart-col-group">
+                  <div class="v-col-bar" style="height: 85%;">
+                    <span class="col-val-tooltip">6 Awards</span>
+                  </div>
+                  <span class="col-day-label">Engineering</span>
+                </div>
+
+                <div class="chart-col-group">
+                  <div class="v-col-bar" style="height: 60%;">
+                    <span class="col-val-tooltip">4 Badges</span>
+                  </div>
+                  <span class="col-day-label">Research</span>
+                </div>
+
+                <div class="chart-col-group">
+                  <div class="v-col-bar active" style="height: 75%;">
+                    <span class="col-val-tooltip">5 Repos</span>
+                  </div>
+                  <span class="col-day-label">Open Source</span>
+                </div>
+
+                <div class="chart-col-group">
+                  <div class="v-col-bar" style="height: 45%;">
+                    <span class="col-val-tooltip">3 Certs</span>
+                  </div>
+                  <span class="col-day-label">Cloud Certs</span>
+                </div>
+
+                <div class="chart-col-group">
+                  <div class="v-col-bar" style="height: 90%;">
+                    <span class="col-val-tooltip">7 Grants</span>
+                  </div>
+                  <span class="col-day-label">Fellowships</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Graph 5: Weekly Activity (CSS Column Chart) -->
+            <div class="graph-card graph-col-6">
+              <div class="graph-card-header">
+                <div class="graph-title">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>5. Weekly Activity // Deep Work Hours</span>
+                </div>
+                <span class="metric-badge-tag">46.5h Total</span>
+              </div>
+
+              <div class="column-chart-display">
+                <div class="chart-col-group">
+                  <div class="v-col-bar" style="height: 72%;">
+                    <span class="col-val-tooltip">7.2h</span>
+                  </div>
+                  <span class="col-day-label">MON</span>
+                </div>
+
+                <div class="chart-col-group">
+                  <div class="v-col-bar" style="height: 84%;">
+                    <span class="col-val-tooltip">8.4h</span>
+                  </div>
+                  <span class="col-day-label">TUE</span>
+                </div>
+
+                <div class="chart-col-group">
+                  <div class="v-col-bar active" style="height: 95%;">
+                    <span class="col-val-tooltip">9.5h (Peak)</span>
+                  </div>
+                  <span class="col-day-label">WED</span>
+                </div>
+
+                <div class="chart-col-group">
+                  <div class="v-col-bar" style="height: 81%;">
+                    <span class="col-val-tooltip">8.1h</span>
+                  </div>
+                  <span class="col-day-label">THU</span>
+                </div>
+
+                <div class="chart-col-group">
+                  <div class="v-col-bar" style="height: 68%;">
+                    <span class="col-val-tooltip">6.8h</span>
+                  </div>
+                  <span class="col-day-label">FRI</span>
+                </div>
+
+                <div class="chart-col-group">
+                  <div class="v-col-bar" style="height: 38%;">
+                    <span class="col-val-tooltip">3.8h</span>
+                  </div>
+                  <span class="col-day-label">SAT</span>
+                </div>
+
+                <div class="chart-col-group">
+                  <div class="v-col-bar" style="height: 28%;">
+                    <span class="col-val-tooltip">2.7h</span>
+                  </div>
+                  <span class="col-day-label">SUN</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Graph 6: Performance Summary Comparison Graphic -->
+            <div class="graph-card graph-col-6">
+              <div class="graph-card-header">
+                <div class="graph-title">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                  </svg>
+                  <span>6. Performance Summary Matrix</span>
+                </div>
+                <span class="metric-badge-tag">Target: 90+</span>
+              </div>
+
+              <div class="performance-matrix-strip">
+                <div class="matrix-cell">
+                  <span class="matrix-dim-name">System Velocity</span>
+                  <div class="matrix-score-bar">
+                    <div class="matrix-mini-track">
+                      <div class="matrix-mini-fill" style="width: 95%;"></div>
+                    </div>
+                    <span class="matrix-score-num">95</span>
+                  </div>
+                </div>
+
+                <div class="matrix-cell">
+                  <span class="matrix-dim-name">Code Reliability</span>
+                  <div class="matrix-score-bar">
+                    <div class="matrix-mini-track">
+                      <div class="matrix-mini-fill" style="width: 98%;"></div>
+                    </div>
+                    <span class="matrix-score-num">98</span>
+                  </div>
+                </div>
+
+                <div class="matrix-cell">
+                  <span class="matrix-dim-name">Innovation Quotient</span>
+                  <div class="matrix-score-bar">
+                    <div class="matrix-mini-track">
+                      <div class="matrix-mini-fill" style="width: 92%;"></div>
+                    </div>
+                    <span class="matrix-score-num">92</span>
+                  </div>
+                </div>
+
+                <div class="matrix-cell">
+                  <span class="matrix-dim-name">Deep Work Ratio</span>
+                  <div class="matrix-score-bar">
+                    <div class="matrix-mini-track">
+                      <div class="matrix-mini-fill" style="width: 89%;"></div>
+                    </div>
+                    <span class="matrix-score-num">89</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- C. Goals and Achievements Combined Section (Side-by-Side Major Cards) -->
+          <div class="dual-command-cards">
+            
+            <!-- Major Goals Card -->
+            <div class="major-overview-card">
+              <div class="card-title-banner">
+                <div class="banner-title">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-primary)" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                  <span>Primary Strategic Goals</span>
+                </div>
+                <span class="banner-badge badge-cyan">Active Sprint</span>
+              </div>
+
+              <div class="mini-items-stack">
+                <!-- Goal 1 -->
+                <div class="mini-goal-item">
+                  <div class="mini-goal-header">
+                    <span class="goal-name">Deploy AetherOS Cloud Orchestrator</span>
+                    <span class="priority-tag priority-p0">Critical P0</span>
+                  </div>
+                  <div class="mini-goal-meta">
+                    <span>Category: Cloud Infrastructure</span>
+                    <span>Target: Nov 15, 2026</span>
+                  </div>
+                  <div class="css-progress-track">
+                    <div class="css-progress-fill" style="width: 92%;"></div>
+                  </div>
+                </div>
+
+                <!-- Goal 2 -->
+                <div class="mini-goal-item">
+                  <div class="mini-goal-header">
+                    <span class="goal-name">Publish Distributed Consensus Research Paper</span>
+                    <span class="priority-tag priority-p1">High P1</span>
+                  </div>
+                  <div class="mini-goal-meta">
+                    <span>Category: Publications & Science</span>
+                    <span>Target: Dec 01, 2026</span>
+                  </div>
+                  <div class="css-progress-track">
+                    <div class="css-progress-fill" style="width: 78%;"></div>
+                  </div>
+                </div>
+
+                <!-- Goal 3 -->
+                <div class="mini-goal-item">
+                  <div class="mini-goal-header">
+                    <span class="goal-name">Scale NexusCore to 50k Concurrent Agents</span>
+                    <span class="priority-tag priority-p0">Critical P0</span>
+                  </div>
+                  <div class="mini-goal-meta">
+                    <span>Category: Autonomous AI</span>
+                    <span>Target: Dec 20, 2026</span>
+                  </div>
+                  <div class="css-progress-track">
+                    <div class="css-progress-fill" style="width: 85%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Major Achievements Card -->
+            <div class="major-overview-card">
+              <div class="card-title-banner">
+                <div class="banner-title">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--violet-light)" stroke-width="2" aria-hidden="true">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <span>Key Career Accolades</span>
+                </div>
+                <span class="banner-badge badge-violet">Verified Credentials</span>
+              </div>
+
+              <div class="mini-items-stack">
+                <!-- Achievement 1 -->
+                <div class="mini-achievement-item">
+                  <div class="achieve-icon-badge">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                  </div>
+                  <div class="achieve-info">
+                    <span class="achieve-title">Global Cloud Architecture Award // 1st Place</span>
+                    <span class="achieve-desc">Awarded for lowest p99 latency consensus algorithm at ScaleCon 2025.</span>
+                    <span class="achieve-date">ISSUED: 2025.08 // VERIFIED ON-CHAIN</span>
+                  </div>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="mini-achievement-item">
+                  <div class="achieve-icon-badge">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <circle cx="12" cy="8" r="7"></circle>
+                      <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                  </div>
+                  <div class="achieve-info">
+                    <span class="achieve-title">Top Open Source Contributor Fellowship</span>
+                    <span class="achieve-desc">Maintained high-throughput WebAssembly runtime used by 400k+ developers.</span>
+                    <span class="achieve-date">ISSUED: 2025.02 // KERNEL FOUNDATION</span>
+                  </div>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="mini-achievement-item">
+                  <div class="achieve-icon-badge">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                  </div>
+                  <div class="achieve-info">
+                    <span class="achieve-title">Principal Systems Engineering Fellow</span>
+                    <span class="achieve-desc">Elected for contributions to multi-region cloud disaster recovery patterns.</span>
+                    <span class="achieve-date">ISSUED: 2024.11 // TECH COUNCIL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ==================================================================
+             SECTION 2: ABOUT ME & COMMAND CENTER HARDWARE SPECS
+             ================================================================== -->
+        <section id="about" class="section-wrapper">
+          
+          <div class="section-header-block">
+            <div class="section-title-wrap">
+              <div class="section-eyebrow">Identity & Philosophy</div>
+              <h2 class="section-heading">About Me & Workstation Specs</h2>
+              <p class="section-desc">Engineering principles, hardware specs, and continuous architectural evolution.</p>
+            </div>
+            <span class="section-meta-tag">SPEC // v4.8</span>
+          </div>
+
+          <div class="about-grid-layout">
+            
+            <!-- Left: Biography & Engineering Philosophy -->
+            <div class="about-bio-card">
+              <h3 class="banner-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-primary)" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <span>Engineering Philosophy</span>
+              </h3>
+
+              <p class="bio-paragraph">
+                I am <strong>Sarthak Chaudhary</strong>, a Staff Systems Architect and Creative Technologist who views software not merely as code, but as high-velocity living architecture. For over 8 years, I have architected mission-critical distributed systems, high-concurrency microservices, and hardware-accelerated user interfaces.
+              </p>
+
+              <p class="bio-paragraph">
+                My approach synthesizes three pillars: <strong>rigorous mathematical correctness</strong> in the backend, <strong>sensory elegance</strong> in human-computer interfaces, and <strong>quantitative discipline</strong> in daily life execution.
+              </p>
+
+              <!-- Hardware & Operating Environment Matrix -->
+              <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-highlight); margin-top: 8px;">Command Center Specifications</h4>
+              
+              <div class="specs-grid">
+                <div class="spec-box">
+                  <span class="spec-key">COMPUTE CORE:</span>
+                  <span class="spec-val">Apple M3 Max // 16-Core CPU // 40-Core GPU</span>
+                </div>
+                <div class="spec-box">
+                  <span class="spec-key">UNIFIED MEMORY:</span>
+                  <span class="spec-val">64GB Unified RAM // 400GB/s Bandwidth</span>
+                </div>
+                <div class="spec-box">
+                  <span class="spec-key">DISPLAYS:</span>
+                  <span class="spec-val">Dual 4K Pro Art IPS // 144Hz Calibration</span>
+                </div>
+                <div class="spec-box">
+                  <span class="spec-key">TERMINAL & SHELL:</span>
+                  <span class="spec-val">Zsh + Neovim + Warp // Tokyo Night Theme</span>
+                </div>
+                <div class="spec-box">
+                  <span class="spec-key">KEYBOARD:</span>
+                  <span class="spec-val">Custom Ortholinear Split 58-Key Mechanical</span>
+                </div>
+                <div class="spec-box">
+                  <span class="spec-key">NETWORK:</span>
+                  <span class="spec-val">10GbE Fiber LAN // Redundant Cellular Failover</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Career Trajectory Timeline -->
+            <div class="career-timeline-card">
+              <h3 class="banner-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--violet-light)" stroke-width="2" aria-hidden="true">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+                <span>Evolutionary Trajectory</span>
+              </h3>
+
+              <div class="timeline-stream">
+                
+                <div class="timeline-node">
+                  <div class="timeline-dot"></div>
+                  <span class="timeline-node-period">2024 — PRESENT</span>
+                  <h4 class="timeline-node-title">Staff Systems Architect & AI Infrastructure Lead</h4>
+                  <span class="timeline-node-org">Apex Global Technologies // San Francisco & Remote</span>
+                  <p class="timeline-node-desc">Directing core edge computing fabric and autonomous multi-agent graph orchestration. Reduced cross-region latency by 44%.</p>
+                </div>
+
+                <div class="timeline-node">
+                  <div class="timeline-dot"></div>
+                  <span class="timeline-node-period">2021 — 2024</span>
+                  <h4 class="timeline-node-title">Senior Full-Stack & Creative Engineering Specialist</h4>
+                  <span class="timeline-node-org">Hyperion Labs // Distributed Systems Division</span>
+                  <p class="timeline-node-desc">Engineered interactive real-time telemetry dashboards for 1.8M daily active developers with WebGL and CSS hardware compositor acceleration.</p>
+                </div>
+
+                <div class="timeline-node">
+                  <div class="timeline-dot"></div>
+                  <span class="timeline-node-period">2018 — 2021</span>
+                  <h4 class="timeline-node-title">Systems Software Engineer</h4>
+                  <span class="timeline-node-org">Quantum Stream Inc.</span>
+                  <p class="timeline-node-desc">Developed high-throughput pub/sub microservices in Go and Rust, achieving 1.2M events/sec with sub-millisecond tail latency.</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ==================================================================
+             SECTION 3: SKILLS MATRIX & PROFICIENCY
+             ================================================================== -->
+        <section id="skills" class="section-wrapper">
+          
+          <div class="section-header-block">
+            <div class="section-title-wrap">
+              <div class="section-eyebrow">Arsenal & Proficiencies</div>
+              <h2 class="section-heading">Technical Skills & Competency Matrix</h2>
+              <p class="section-desc">Quantified mastery across systems architecture, creative web engineering, distributed clouds, and AI workflows.</p>
+            </div>
+            <span class="section-meta-tag">42 PROFICIENCIES</span>
+          </div>
+
+          <div class="skills-pillars-grid">
+            
+            <!-- Pillar 1: Systems & 3D Web -->
+            <div class="skill-pillar-card">
+              <div class="pillar-header">
+                <div class="pillar-icon-box">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="pillar-title">3D Web & Modern UI</h3>
+                  <span class="pillar-sub">Visual Excellence & Performance</span>
+                </div>
+              </div>
+
+              <div class="skill-items-list">
+                <div class="skill-bar-unit">
+                  <div class="skill-bar-info">
+                    <span>Modern CSS3, 3D Transforms & Grid</span>
+                    <span class="skill-percent">98%</span>
+                  </div>
+                  <div class="css-progress-track">
+                    <div class="css-progress-fill" style="width: 98%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-unit">
+                  <div class="skill-bar-info">
+                    <span>Semantic HTML5 & Accessibility (WCAG AAA)</span>
+                    <span class="skill-percent">96%</span>
+                  </div>
+                  <div class="css-progress-track">
+                    <div class="css-progress-fill" style="width: 96%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-unit">
+                  <div class="skill-bar-info">
+                    <span>Core Web Vitals & Frame Rate Optimization</span>
+                    <span class="skill-percent">95%</span>
+                  </div>
+                  <div class="css-progress-track">
+                    <div class="css-progress-fill" style="width: 95%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-unit">
+                  <div class="skill-bar-info">
+                    <span>Design Systems & Tokens Architecture</span>
+                    <span class="skill-percent">94%</span>
+                  </div>
+                  <div class="css-progress-track">
+                    <div class="css-progress-fill" style="width: 94%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-pill-tags">
+                <span class="skill-pill">CSS Grid</span>
+                <span class="skill-pill">Preserve-3D</span>
+                <span class="skill-pill">Glassmorphism</span>
+                <span class="skill-pill">Compositor Motion</span>
+                <span class="skill-pill">SVG Filters</span>
+              </div>
+            </div>
+
+            <!-- Pillar 2: Distributed Cloud & Backend -->
+            <div class="skill-pillar-card">
+              <div class="pillar-header">
+                <div class="pillar-icon-box">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="pillar-title">Distributed Systems</h3>
+                  <span class="pillar-sub">Cloud Fabric & High Concurrency</span>
+                </div>
+              </div>
+
+              <div class="skill-items-list">
+                <div class="skill-bar-unit">
+                  <div class="skill-bar-info">
+                    <span>Microservices & Event-Driven Concurrency</span>
+                    <span class="skill-percent">95%</span>
+                  </div>
+                  <div class="css-progress-track">
+                    <div class="css-progress-fill" style="width: 95%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-unit">
+                  <div class="skill-bar-info">
+                    <span>PostgreSQL, Redis & Distributed Storage</span>
+                    <span class="skill-percent">92%</span>
+                  </div>
+                  <div class="css-progress-track">
+                    <div class="css-progress-fill" style="width: 92%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-unit">
+                  <div class="skill-bar-info">
+                    <span>Kubernetes, Docker & Service Meshes</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="css-progress-track">
+                    <div class="css-progress-fill" style="width: 90%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-unit">
+                  <div class="skill-bar-info">
+                    <span>Global CDN & Multi-Region Edge Routing</span>
+                    <span class="skill-percent">93%</span>
+                  </div>
+                  <div class="css-progress-track">
+                    <div class="css-progress-fill" style="width: 93%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-pill-tags">
+                <span class="skill-pill">Go</span>
+                <span class="skill-pill">Rust</span>
+                <span class="skill-pill">gRPC</span>
+                <span class="skill-pill">Kafka</span>
+                <span class="skill-pill">Terraform</span>
+              </div>
+            </div>
+
+            <!-- Pillar 3: AI & Autonomous Systems -->
+            <div class="skill-pillar-card">
+              <div class="pillar-header">
+                <div class="pillar-icon-box">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="pillar-title">Autonomous AI & Models</h3>
+                  <span class="pillar-sub">Agent Graphs & Embeddings</span>
+                </div>
+              </div>
+
+              <div class="skill-items-list">
+                <div class="skill-bar-unit">
+                  <div class="skill-bar-info">
+                    <span>Autonomous Agent Architectures</span>
+                    <span class="skill-percent">92%</span>
+                  </div>
+                  <div class="css-progress-track">
+                    <div class="css-progress-fill" style="width: 92%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-unit">
+                  <div class="skill-bar-info">
+                    <span>RAG & Vector Retrieval Engines</span>
+                    <span class="skill-percent">89%</span>
+                  </div>
+                  <div class="css-progress-track">
+                    <div class="css-progress-fill" style="width: 89%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-unit">
+                  <div class="skill-bar-info">
+                    <span>Prompt Optimization & Structured JSON Outputs</span>
+                    <span class="skill-percent">96%</span>
+                  </div>
+                  <div class="css-progress-track">
+                    <div class="css-progress-fill" style="width: 96%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-bar-unit">
+                  <div class="skill-bar-info">
+                    <span>Local Model Quantization & Edge Inference</span>
+                    <span class="skill-percent">86%</span>
+                  </div>
+                  <div class="css-progress-track">
+                    <div class="css-progress-fill" style="width: 86%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-pill-tags">
+                <span class="skill-pill">Agentic Workflows</span>
+                <span class="skill-pill">Embeddings</span>
+                <span class="skill-pill">Function Calling</span>
+                <span class="skill-pill">PyTorch</span>
+                <span class="skill-pill">ONNX</span>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ==================================================================
+             SECTION 4: PROJECTS SHOWCASE (CSS Interactive Filter & 3D Tilt Cards)
+             ================================================================== -->
+        <section id="projects" class="section-wrapper">
+          
+          <div class="section-header-block">
+            <div class="section-title-wrap">
+              <div class="section-eyebrow">Production Architectures</div>
+              <h2 class="section-heading">Featured Projects Showcase</h2>
+              <p class="section-desc">Interactive showcase of mission-critical systems, distributed platforms, and 3D web engines.</p>
+            </div>
+            <span class="section-meta-tag">6 FEATURED SYSTEMS</span>
+          </div>
+
+          <!-- Pure CSS Category Filter via Hidden Radios -->
+          <input type="radio" name="project-filter" id="project-filter-all" class="tab-radio" checked>
+          <input type="radio" name="project-filter" id="project-filter-cloud" class="tab-radio">
+          <input type="radio" name="project-filter" id="project-filter-ai" class="tab-radio">
+          <input type="radio" name="project-filter" id="project-filter-web3d" class="tab-radio">
+
+          <div class="filter-tabs-wrapper">
+            <label for="project-filter-all" class="tab-pill-label">All Systems (06)</label>
+            <label for="project-filter-cloud" class="tab-pill-label">Cloud & Infrastructure (03)</label>
+            <label for="project-filter-ai" class="tab-pill-label">Autonomous AI (02)</label>
+            <label for="project-filter-web3d" class="tab-pill-label">3D Creative Web (02)</label>
+          </div>
+
+          <div class="projects-showcase-grid">
+            
+            <!-- Project 1: AetherOS -->
+            <article class="project-card-3d cat-cloud">
+              <div class="project-media-frame">
+                <img src="assets/images/project-aether.jpg" alt="AetherOS Cloud Orchestration Dashboard Interface" class="project-img">
+                <span class="project-status-badge">PROD LIVE // v3.4</span>
+              </div>
+              <div class="project-info-body">
+                <div class="project-title-row">
+                  <h3 class="project-title">AetherOS // Cloud Orchestrator</h3>
+                  <span class="project-category">Cloud Fabric</span>
+                </div>
+                <p class="project-summary">
+                  Distributed cloud control plane featuring multi-cluster Kubernetes topology visualization, sub-millisecond telemetry routing, and zero-downtime rolling failovers.
+                </p>
+                <div class="project-metric-highlight">
+                  <span class="metric-highlight-key">TELEMETRY THROUGHPUT:</span>
+                  <span class="metric-highlight-val">4.2M req/sec @ 1.2ms p99</span>
+                </div>
+                <div class="project-tech-stack">
+                  <span class="tech-pill">Kubernetes</span>
+                  <span class="tech-pill">Rust</span>
+                  <span class="tech-pill">Go</span>
+                  <span class="tech-pill">gRPC</span>
+                  <span class="tech-pill">CSS 3D</span>
+                </div>
+                <div class="project-footer-actions">
+                  <a href="#overview" class="project-link-btn btn-primary-link">Telemetry View</a>
+                  <a href="#contact" class="project-link-btn btn-secondary-link">Architecture Specs</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: NexusCore -->
+            <article class="project-card-3d cat-ai">
+              <div class="project-media-frame">
+                <img src="assets/images/project-nexus.jpg" alt="NexusCore Autonomous Agent Graph Dashboard" class="project-img">
+                <span class="project-status-badge">ACTIVE // STABLE</span>
+              </div>
+              <div class="project-info-body">
+                <div class="project-title-row">
+                  <h3 class="project-title">NexusCore // Autonomous Agent Engine</h3>
+                  <span class="project-category">AI Engineering</span>
+                </div>
+                <p class="project-summary">
+                  High-throughput autonomous agent framework capable of dynamic reasoning graphs, multi-model consensus validation, and live token throughput optimization.
+                </p>
+                <div class="project-metric-highlight">
+                  <span class="metric-highlight-key">AGENT CONCURRENCY:</span>
+                  <span class="metric-highlight-val">25,000 Parallel Streams</span>
+                </div>
+                <div class="project-tech-stack">
+                  <span class="tech-pill">PyTorch</span>
+                  <span class="tech-pill">Vector DB</span>
+                  <span class="tech-pill">FastAPI</span>
+                  <span class="tech-pill">Docker</span>
+                  <span class="tech-pill">Glassmorphism</span>
+                </div>
+                <div class="project-footer-actions">
+                  <a href="#overview" class="project-link-btn btn-primary-link">Agent Graph</a>
+                  <a href="#contact" class="project-link-btn btn-secondary-link">Paper Summary</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Vortex3D -->
+            <article class="project-card-3d cat-web3d">
+              <div class="project-media-frame">
+                <img src="assets/images/project-vortex.jpg" alt="Vortex3D Shader Console & Generative Waveform Engine" class="project-img">
+                <span class="project-status-badge">COMMUNITY OPEN</span>
+              </div>
+              <div class="project-info-body">
+                <div class="project-title-row">
+                  <h3 class="project-title">Vortex3D // Generative Shader Engine</h3>
+                  <span class="project-category">Creative Web</span>
+                </div>
+                <p class="project-summary">
+                  Hardware-accelerated visual computing workspace rendering complex 3D wireframe polyhedrons, procedural audio waveforms, and zero-JS CSS animations at 120 FPS.
+                </p>
+                <div class="project-metric-highlight">
+                  <span class="metric-highlight-key">RENDER PERFORMANCE:</span>
+                  <span class="metric-highlight-val">120 FPS // 0ms JS Overhead</span>
+                </div>
+                <div class="project-tech-stack">
+                  <span class="tech-pill">CSS 3D</span>
+                  <span class="tech-pill">Preserve-3D</span>
+                  <span class="tech-pill">GLSL Math</span>
+                  <span class="tech-pill">SVG Filters</span>
+                </div>
+                <div class="project-footer-actions">
+                  <a href="#hero" class="project-link-btn btn-primary-link">Live 3D Rig</a>
+                  <a href="#skills" class="project-link-btn btn-secondary-link">Math Blueprint</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: HyperScale -->
+            <article class="project-card-3d cat-cloud">
+              <div class="project-media-frame">
+                <img src="assets/images/project-hyperscale.jpg" alt="HyperScale Global Edge Latency Map and CDN Control" class="project-img">
+                <span class="project-status-badge">PROD LIVE // 8.7k NODES</span>
+              </div>
+              <div class="project-info-body">
+                <div class="project-title-row">
+                  <h3 class="project-title">HyperScale // Global Edge Network</h3>
+                  <span class="project-category">Edge Infrastructure</span>
+                </div>
+                <p class="project-summary">
+                  Intelligent edge routing system coordinating over 8,700 global points of presence with automatic BGP Anycast routing and real-time packet loss mitigation.
+                </p>
+                <div class="project-metric-highlight">
+                  <span class="metric-highlight-key">GLOBAL P99 LATENCY:</span>
+                  <span class="metric-highlight-val">28ms Worldwide Mean</span>
+                </div>
+                <div class="project-tech-stack">
+                  <span class="tech-pill">Anycast BGP</span>
+                  <span class="tech-pill">WireGuard</span>
+                  <span class="tech-pill">Rust</span>
+                  <span class="tech-pill">Grafana Telemetry</span>
+                </div>
+                <div class="project-footer-actions">
+                  <a href="#overview" class="project-link-btn btn-primary-link">Edge Status</a>
+                  <a href="#contact" class="project-link-btn btn-secondary-link">Network Audit</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 5: QuantumFlow -->
+            <article class="project-card-3d cat-ai cat-cloud">
+              <div class="project-media-frame">
+                <img src="assets/images/project-quantum.jpg" alt="QuantumFlow Algorithmic Trading Terminal" class="project-img">
+                <span class="project-status-badge">HIGH FREQUENCY</span>
+              </div>
+              <div class="project-info-body">
+                <div class="project-title-row">
+                  <h3 class="project-title">QuantumFlow // Telemetry Matrix</h3>
+                  <span class="project-category">Quantitative Computing</span>
+                </div>
+                <p class="project-summary">
+                  Institutional-grade quantitative telemetry console displaying real-time Level 2 order books, tick-by-tick market depth, and algorithmic execution analytics.
+                </p>
+                <div class="project-metric-highlight">
+                  <span class="metric-highlight-key">EXECUTION SPEED:</span>
+                  <span class="metric-highlight-val">4.5k ticks/sec @ 912µs</span>
+                </div>
+                <div class="project-tech-stack">
+                  <span class="tech-pill">C++ Concurrency</span>
+                  <span class="tech-pill">ZeroMQ</span>
+                  <span class="tech-pill">Shared Memory</span>
+                  <span class="tech-pill">Bloomberg UI</span>
+                </div>
+                <div class="project-footer-actions">
+                  <a href="#analytics" class="project-link-btn btn-primary-link">Tick Telemetry</a>
+                  <a href="#contact" class="project-link-btn btn-secondary-link">Security Review</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 6: ChronoPulse -->
+            <article class="project-card-3d cat-web3d">
+              <div class="project-media-frame" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg, #0b101b, #1e1b4b);">
+                <div style="text-align:center;padding:20px;">
+                  <div style="font-family:var(--font-mono);font-size:2rem;color:var(--cyan-primary);font-weight:800;letter-spacing:0.1em;">CHRONO // PULSE</div>
+                  <div style="font-size:0.8rem;color:var(--violet-light);margin-top:6px;">CIRCADIAN BIOMETRIC MATRIX</div>
+                </div>
+                <span class="project-status-badge">Q4 RESEARCH</span>
+              </div>
+              <div class="project-info-body">
+                <div class="project-title-row">
+                  <h3 class="project-title">ChronoPulse // Circadian Matrix</h3>
+                  <span class="project-category">Performance Engineering</span>
+                </div>
+                <p class="project-summary">
+                  High-fidelity bio-telemetry analytics platform correlating sleep stages, HRV rhythms, and cognitive deep-work capacity with algorithmic task scheduling.
+                </p>
+                <div class="project-metric-highlight">
+                  <span class="metric-highlight-key">DEEP WORK EFFICIENCY:</span>
+                  <span class="metric-highlight-val">+34% Peak Flow Output</span>
+                </div>
+                <div class="project-tech-stack">
+                  <span class="tech-pill">Biometrics</span>
+                  <span class="tech-pill">TimescaleDB</span>
+                  <span class="tech-pill">Signal Processing</span>
+                  <span class="tech-pill">CSS Conic Graphs</span>
+                </div>
+                <div class="project-footer-actions">
+                  <a href="#analytics" class="project-link-btn btn-primary-link">Bio Metrics</a>
+                  <a href="#contact" class="project-link-btn btn-secondary-link">Methodology</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </section>
+
+        <!-- ==================================================================
+             SECTION 5: GOALS DEEP DIVE (OKRs, Milestones & Target Dates)
+             ================================================================== -->
+        <section id="goals" class="section-wrapper">
+          
+          <div class="section-header-block">
+            <div class="section-title-wrap">
+              <div class="section-eyebrow">Strategic Objectives</div>
+              <h2 class="section-heading">Detailed Goals & Key Results (OKRs)</h2>
+              <p class="section-desc">Active sprint objectives, long-range engineering milestones, and completion roadmaps.</p>
+            </div>
+            <span class="section-meta-tag">28 OBJECTIVES</span>
+          </div>
+
+          <!-- Pure CSS Filter Tabs for Goals -->
+          <input type="radio" name="goal-filter" id="goal-filter-all" class="tab-radio" checked>
+          <input type="radio" name="goal-filter" id="goal-filter-active" class="tab-radio">
+          <input type="radio" name="goal-filter" id="goal-filter-completed" class="tab-radio">
+          <input type="radio" name="goal-filter" id="goal-filter-long" class="tab-radio">
+
+          <div class="filter-tabs-wrapper">
+            <label for="goal-filter-all" class="tab-pill-label">All Goals (06)</label>
+            <label for="goal-filter-active" class="tab-pill-label">Active Sprint (04)</label>
+            <label for="goal-filter-completed" class="tab-pill-label">Completed (02)</label>
+            <label for="goal-filter-long" class="tab-pill-label">Long-Range Horizon (02)</label>
+          </div>
+
+          <div class="goals-detailed-grid">
+            
+            <!-- Goal 1 -->
+            <div class="goal-item-card status-active">
+              <div class="goal-top-meta">
+                <span class="goal-cat-tag">Architecture</span>
+                <span class="priority-tag priority-p0">Critical P0</span>
+              </div>
+              <h3 class="goal-card-title">Production Release of AetherOS v3.4</h3>
+              <div class="goal-deadline-strip">
+                <span>PROGRESS: 92%</span>
+                <span class="target-date">TARGET: 2026.11.15</span>
+              </div>
+              <div class="css-progress-track">
+                <div class="css-progress-fill" style="width: 92%;"></div>
+              </div>
+              <div class="goal-milestones-list">
+                <div class="milestone-entry">
+                  <span class="milestone-check completed"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                  <span>Implement eBPF packet filter mesh</span>
+                </div>
+                <div class="milestone-entry">
+                  <span class="milestone-check completed"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                  <span>Validate chaos engineering multi-region failover</span>
+                </div>
+                <div class="milestone-entry">
+                  <span class="milestone-check"><svg viewBox="0 0 24 24"></svg></span>
+                  <span>Complete SOC2 Type II compliance audit</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Goal 2 -->
+            <div class="goal-item-card status-active term-long">
+              <div class="goal-top-meta">
+                <span class="goal-cat-tag">Research & Publications</span>
+                <span class="priority-tag priority-p1">High P1</span>
+              </div>
+              <h3 class="goal-card-title">Publish "Deterministic Concurrency in Edge Fabrics"</h3>
+              <div class="goal-deadline-strip">
+                <span>PROGRESS: 78%</span>
+                <span class="target-date">TARGET: 2026.12.01</span>
+              </div>
+              <div class="css-progress-track">
+                <div class="css-progress-fill" style="width: 78%;"></div>
+              </div>
+              <div class="goal-milestones-list">
+                <div class="milestone-entry">
+                  <span class="milestone-check completed"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                  <span>Benchmark Raft vs Paxos edge variants</span>
+                </div>
+                <div class="milestone-entry">
+                  <span class="milestone-check completed"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                  <span>Complete empirical stress tests with 10M events</span>
+                </div>
+                <div class="milestone-entry">
+                  <span class="milestone-check"><svg viewBox="0 0 24 24"></svg></span>
+                  <span>Peer review submission to ACM SIGCOMM</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Goal 3 -->
+            <div class="goal-item-card status-active">
+              <div class="goal-top-meta">
+                <span class="goal-cat-tag">Autonomous AI</span>
+                <span class="priority-tag priority-p0">Critical P0</span>
+              </div>
+              <h3 class="goal-card-title">Scale NexusCore to 50k Concurrent Agents</h3>
+              <div class="goal-deadline-strip">
+                <span>PROGRESS: 85%</span>
+                <span class="target-date">TARGET: 2026.12.20</span>
+              </div>
+              <div class="css-progress-track">
+                <div class="css-progress-fill" style="width: 85%;"></div>
+              </div>
+              <div class="goal-milestones-list">
+                <div class="milestone-entry">
+                  <span class="milestone-check completed"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                  <span>Implement Lock-Free Ringbuffer IPC</span>
+                </div>
+                <div class="milestone-entry">
+                  <span class="milestone-check completed"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                  <span>Token streaming quantization pipeline</span>
+                </div>
+                <div class="milestone-entry">
+                  <span class="milestone-check"><svg viewBox="0 0 24 24"></svg></span>
+                  <span>Zero-memory leak validation over 72-hour burn test</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Goal 4 -->
+            <div class="goal-item-card status-completed">
+              <div class="goal-top-meta">
+                <span class="goal-cat-tag">Open Source</span>
+                <span class="priority-tag priority-p2">Medium P2</span>
+              </div>
+              <h3 class="goal-card-title">Release Vortex3D Hardware-Accelerated Shader Lib</h3>
+              <div class="goal-deadline-strip">
+                <span style="color:var(--emerald-light);">STATUS: 100% COMPLETE</span>
+                <span class="target-date">COMPLETED: 2026.09.18</span>
+              </div>
+              <div class="css-progress-track">
+                <div class="css-progress-fill" style="width: 100%;"></div>
+              </div>
+              <div class="goal-milestones-list">
+                <div class="milestone-entry">
+                  <span class="milestone-check completed"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                  <span>Publish pure CSS 3D hypercube math engine</span>
+                </div>
+                <div class="milestone-entry">
+                  <span class="milestone-check completed"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                  <span>Achieve 10,000 GitHub stars and 150 contributors</span>
+                </div>
+                <div class="milestone-entry">
+                  <span class="milestone-check completed"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                  <span>Write interactive documentation & live sandboxes</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Goal 5 -->
+            <div class="goal-item-card status-completed">
+              <div class="goal-top-meta">
+                <span class="goal-cat-tag">Credentials</span>
+                <span class="priority-tag priority-p1">High P1</span>
+              </div>
+              <h3 class="goal-card-title">AWS Certified Solutions Architect & Security Specialty</h3>
+              <div class="goal-deadline-strip">
+                <span style="color:var(--emerald-light);">STATUS: 100% COMPLETE</span>
+                <span class="target-date">COMPLETED: 2026.04.10</span>
+              </div>
+              <div class="css-progress-track">
+                <div class="css-progress-fill" style="width: 100%;"></div>
+              </div>
+              <div class="goal-milestones-list">
+                <div class="milestone-entry">
+                  <span class="milestone-check completed"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                  <span>Score 960/1000 on Professional Solutions Architect</span>
+                </div>
+                <div class="milestone-entry">
+                  <span class="milestone-check completed"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                  <span>Complete Cloud Security & Cryptography Mastery</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Goal 6 -->
+            <div class="goal-item-card status-active term-long">
+              <div class="goal-top-meta">
+                <span class="goal-cat-tag">Life & Athletic Focus</span>
+                <span class="priority-tag priority-p1">High P1</span>
+              </div>
+              <h3 class="goal-card-title">Sub-10 Hour Ironman Distance Triathlon</h3>
+              <div class="goal-deadline-strip">
+                <span>PROGRESS: 81%</span>
+                <span class="target-date">TARGET: 2027.06.20</span>
+              </div>
+              <div class="css-progress-track">
+                <div class="css-progress-fill" style="width: 81%;"></div>
+              </div>
+              <div class="goal-milestones-list">
+                <div class="milestone-entry">
+                  <span class="milestone-check completed"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                  <span>FTP threshold power over 310 Watts sustained</span>
+                </div>
+                <div class="milestone-entry">
+                  <span class="milestone-check completed"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                  <span>Sub-3:00 Marathon qualifying run time</span>
+                </div>
+                <div class="milestone-entry">
+                  <span class="milestone-check"><svg viewBox="0 0 24 24"></svg></span>
+                  <span>Final peak volume simulation (18 hrs/week)</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ==================================================================
+             SECTION 6: ACHIEVEMENTS TROPHY HALL (Holographic Badges)
+             ================================================================== -->
+        <section id="achievements" class="section-wrapper">
+          
+          <div class="section-header-block">
+            <div class="section-title-wrap">
+              <div class="section-eyebrow">Accolades & Recognition</div>
+              <h2 class="section-heading">Achievements Trophy Hall</h2>
+              <p class="section-desc">Verified awards, cryptographic badges, research honors, and technical leadership milestones.</p>
+            </div>
+            <span class="section-meta-tag">18 VERIFIED BADGES</span>
+          </div>
+
+          <div class="achievements-trophy-grid">
+            
+            <!-- Trophy 1 -->
+            <div class="trophy-card-holo">
+              <div class="trophy-header">
+                <div class="trophy-icon-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <span class="trophy-tier-badge tier-diamond">DIAMOND TIER</span>
+              </div>
+              <h3 class="trophy-title">ScaleCon Global Architecture Grand Prize</h3>
+              <div class="trophy-org-date">
+                <span>ScaleCon Foundation</span>
+                <span>2025.08.14</span>
+              </div>
+              <p class="trophy-description">
+                First prize among 450 international distributed systems teams for inventing an adaptive eBPF-based edge routing algorithm that cut p99 tail latency from 84ms to 12ms.
+              </p>
+              <div class="trophy-hash-verify">
+                <span>VERIFICATION HASH:</span>
+                <span>0x8F9a...2E1b [VERIFIED]</span>
+              </div>
+            </div>
+
+            <!-- Trophy 2 -->
+            <div class="trophy-card-holo">
+              <div class="trophy-header">
+                <div class="trophy-icon-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                  </svg>
+                </div>
+                <span class="trophy-tier-badge tier-diamond">DIAMOND TIER</span>
+              </div>
+              <h3 class="trophy-title">Top Open Source Fellow // WebAssembly</h3>
+              <div class="trophy-org-date">
+                <span>Open Core Alliance</span>
+                <span>2025.03.02</span>
+              </div>
+              <p class="trophy-description">
+                Awarded top fellowship grant for pioneering zero-copy memory transfers between WebAssembly sandboxes and native edge microservices runtimes.
+              </p>
+              <div class="trophy-hash-verify">
+                <span>VERIFICATION HASH:</span>
+                <span>0x3B4c...98Fa [VERIFIED]</span>
+              </div>
+            </div>
+
+            <!-- Trophy 3 -->
+            <div class="trophy-card-holo">
+              <div class="trophy-header">
+                <div class="trophy-icon-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <span class="trophy-tier-badge tier-platinum">PLATINUM TIER</span>
+              </div>
+              <h3 class="trophy-title">Principal Cloud Architecture Fellow</h3>
+              <div class="trophy-org-date">
+                <span>Tech Excellence Institute</span>
+                <span>2024.11.20</span>
+              </div>
+              <p class="trophy-description">
+                Honored for designing zero-downtime database synchronization topologies serving over 18 million active global transactional sessions.
+              </p>
+              <div class="trophy-hash-verify">
+                <span>VERIFICATION HASH:</span>
+                <span>0x1C7d...44Ec [VERIFIED]</span>
+              </div>
+            </div>
+
+            <!-- Trophy 4 -->
+            <div class="trophy-card-holo">
+              <div class="trophy-header">
+                <div class="trophy-icon-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+                <span class="trophy-tier-badge tier-platinum">PLATINUM TIER</span>
+              </div>
+              <h3 class="trophy-title">National AI Hackathon Grand Champion</h3>
+              <div class="trophy-org-date">
+                <span>Neural Nexus Foundation</span>
+                <span>2024.06.18</span>
+              </div>
+              <p class="trophy-description">
+                Architected an autonomous real-time incident resolution agent swarm that mitigated distributed DDoS attacks and self-healed Kubernetes clusters in under 18 seconds.
+              </p>
+              <div class="trophy-hash-verify">
+                <span>VERIFICATION HASH:</span>
+                <span>0x5E8b...77Aa [VERIFIED]</span>
+              </div>
+            </div>
+
+            <!-- Trophy 5 -->
+            <div class="trophy-card-holo">
+              <div class="trophy-header">
+                <div class="trophy-icon-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                </div>
+                <span class="trophy-tier-badge tier-gold">GOLD TIER</span>
+              </div>
+              <h3 class="trophy-title">1,000+ Consecutive Days Deep Work Honor</h3>
+              <div class="trophy-org-date">
+                <span>Flow State Analytics</span>
+                <span>2024.01.05</span>
+              </div>
+              <p class="trophy-description">
+                Recorded over 3,500 cumulative hours of uninterrupted flow state sessions in systems programming, algorithmic design, and architectural diagramming.
+              </p>
+              <div class="trophy-hash-verify">
+                <span>VERIFICATION HASH:</span>
+                <span>0x99Fa...11Cc [VERIFIED]</span>
+              </div>
+            </div>
+
+            <!-- Trophy 6 -->
+            <div class="trophy-card-holo">
+              <div class="trophy-header">
+                <div class="trophy-icon-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <span class="trophy-tier-badge tier-gold">GOLD TIER</span>
+              </div>
+              <h3 class="trophy-title">Awwwards Developer Site of the Day</h3>
+              <div class="trophy-org-date">
+                <span>Awwwards Jury</span>
+                <span>2023.09.22</span>
+              </div>
+              <p class="trophy-description">
+                Recognized for extreme UI performance, hardware-accelerated 3D shaders running at 120 FPS, and semantic HTML accessibility on desktop and mobile.
+              </p>
+              <div class="trophy-hash-verify">
+                <span>VERIFICATION HASH:</span>
+                <span>0x44Db...88Bf [VERIFIED]</span>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ==================================================================
+             SECTION 7: PERFORMANCE ANALYTICS & GITHUB COMMIT HEATMAP
+             ================================================================== -->
+        <section id="analytics" class="section-wrapper">
+          
+          <div class="section-header-block">
+            <div class="section-title-wrap">
+              <div class="section-eyebrow">Telemetry & Quantitative Habits</div>
+              <h2 class="section-heading">Performance Analytics & 365-Day Commit Matrix</h2>
+              <p class="section-desc">Continuous telemetry capturing engineering velocity, time allocation, and unbroken habit discipline.</p>
+            </div>
+            <span class="section-meta-tag">1,452 COMMITS (2026)</span>
+          </div>
+
+          <div class="analytics-dashboard-stack">
+            
+            <!-- 365-Day CSS Grid Commit Heatmap -->
+            <div class="heatmap-card">
+              <div class="heatmap-meta-bar">
+                <div class="heatmap-stats-summary">
+                  <span>ANNUAL ACTIVITY: <span class="h-stat-strong">1,452 Contributions</span></span>
+                  <span>CURRENT STREAK: <span class="h-stat-strong">314 Days</span></span>
+                  <span>LONGEST STREAK: <span class="h-stat-strong">428 Days</span></span>
+                </div>
+                <div class="heatmap-legend-row">
+                  <span>Less</span>
+                  <div class="legend-cells">
+                    <div class="heat-cell lvl-0"></div>
+                    <div class="heat-cell lvl-1"></div>
+                    <div class="heat-cell lvl-2"></div>
+                    <div class="heat-cell lvl-3"></div>
+                    <div class="heat-cell lvl-4"></div>
+                  </div>
+                  <span>More</span>
+                </div>
+              </div>
+
+              <!-- 52-Week Column Matrix -->
+              <div class="heatmap-scroll-viewport">
+                <div class="heatmap-grid-matrix" aria-label="365-day GitHub style commit heatmap matrix">
+                  <!-- Generating 52 weeks of cells with pure CSS classes -->
+                  <!-- Month 1: Jan -->
+                  <div class="heat-cell lvl-2" title="Jan 01: 4 commits"></div>
+                  <div class="heat-cell lvl-3" title="Jan 02: 7 commits"></div>
+                  <div class="heat-cell lvl-4" title="Jan 03: 11 commits"></div>
+                  <div class="heat-cell lvl-3" title="Jan 04: 6 commits"></div>
+                  <div class="heat-cell lvl-2" title="Jan 05: 4 commits"></div>
+                  <div class="heat-cell lvl-1" title="Jan 06: 2 commits"></div>
+                  <div class="heat-cell lvl-0" title="Jan 07: 0 commits"></div>
+
+                  <div class="heat-cell lvl-3" title="Jan 08: 8 commits"></div>
+                  <div class="heat-cell lvl-4" title="Jan 09: 12 commits"></div>
+                  <div class="heat-cell lvl-4" title="Jan 10: 10 commits"></div>
+                  <div class="heat-cell lvl-2" title="Jan 11: 4 commits"></div>
+                  <div class="heat-cell lvl-3" title="Jan 12: 6 commits"></div>
+                  <div class="heat-cell lvl-1" title="Jan 13: 2 commits"></div>
+                  <div class="heat-cell lvl-1" title="Jan 14: 1 commit"></div>
+
+                  <div class="heat-cell lvl-4" title="Jan 15: 14 commits"></div>
+                  <div class="heat-cell lvl-3" title="Jan 16: 7 commits"></div>
+                  <div class="heat-cell lvl-2" title="Jan 17: 5 commits"></div>
+                  <div class="heat-cell lvl-4" title="Jan 18: 11 commits"></div>
+                  <div class="heat-cell lvl-3" title="Jan 19: 6 commits"></div>
+                  <div class="heat-cell lvl-2" title="Jan 20: 3 commits"></div>
+                  <div class="heat-cell lvl-1" title="Jan 21: 1 commit"></div>
+
+                  <div class="heat-cell lvl-3" title="Jan 22: 6 commits"></div>
+                  <div class="heat-cell lvl-4" title="Jan 23: 10 commits"></div>
+                  <div class="heat-cell lvl-4" title="Jan 24: 13 commits"></div>
+                  <div class="heat-cell lvl-3" title="Jan 25: 7 commits"></div>
+                  <div class="heat-cell lvl-2" title="Jan 26: 4 commits"></div>
+                  <div class="heat-cell lvl-1" title="Jan 27: 2 commits"></div>
+                  <div class="heat-cell lvl-0" title="Jan 28: 0 commits"></div>
+
+                  <!-- Feb -->
+                  <div class="heat-cell lvl-2"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-1"></div>
+                  <div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-0"></div>
+                  <div class="heat-cell lvl-3"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-1"></div>
+                  <div class="heat-cell lvl-2"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-0"></div><div class="heat-cell lvl-0"></div>
+
+                  <!-- Mar -->
+                  <div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-1"></div>
+                  <div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div>
+                  <div class="heat-cell lvl-2"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-0"></div>
+                  <div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-1"></div>
+
+                  <!-- Apr -->
+                  <div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-0"></div>
+                  <div class="heat-cell lvl-3"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-1"></div>
+                  <div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-0"></div>
+                  <div class="heat-cell lvl-2"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-1"></div>
+
+                  <!-- May -->
+                  <div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-0"></div>
+                  <div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div>
+                  <div class="heat-cell lvl-3"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-0"></div>
+                  <div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-1"></div>
+
+                  <!-- Jun -->
+                  <div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-0"></div>
+                  <div class="heat-cell lvl-2"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-1"></div>
+                  <div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-0"></div>
+                  <div class="heat-cell lvl-3"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-1"></div>
+
+                  <!-- Jul -->
+                  <div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div>
+                  <div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-0"></div>
+                  <div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-1"></div>
+                  <div class="heat-cell lvl-2"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-0"></div>
+
+                  <!-- Aug -->
+                  <div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-1"></div>
+                  <div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-0"></div>
+                  <div class="heat-cell lvl-3"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-1"></div>
+                  <div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-0"></div>
+
+                  <!-- Sep -->
+                  <div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-1"></div>
+                  <div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-0"></div>
+                  <div class="heat-cell lvl-3"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-1"></div>
+                  <div class="heat-cell lvl-4"></div><div class="heat-cell lvl-4"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-3"></div><div class="heat-cell lvl-2"></div><div class="heat-cell lvl-1"></div><div class="heat-cell lvl-0"></div>
+
+                  <!-- Oct (Current) -->
+                  <div class="heat-cell lvl-4" title="Oct 01"></div>
+                  <div class="heat-cell lvl-4" title="Oct 02"></div>
+                  <div class="heat-cell lvl-4" title="Oct 03"></div>
+                  <div class="heat-cell lvl-4" title="Oct 04"></div>
+                  <div class="heat-cell lvl-3" title="Oct 05"></div>
+                  <div class="heat-cell lvl-2" title="Oct 06"></div>
+                  <div class="heat-cell lvl-1" title="Oct 07"></div>
+
+                  <div class="heat-cell lvl-4" title="Oct 08"></div>
+                  <div class="heat-cell lvl-4" title="Oct 09"></div>
+                  <div class="heat-cell lvl-4" title="Oct 10"></div>
+                  <div class="heat-cell lvl-4" title="Oct 11"></div>
+                  <div class="heat-cell lvl-3" title="Oct 12"></div>
+                  <div class="heat-cell lvl-2" title="Oct 13"></div>
+                  <div class="heat-cell lvl-1" title="Oct 14"></div>
+
+                  <div class="heat-cell lvl-4" title="Oct 15"></div>
+                  <div class="heat-cell lvl-4" title="Oct 16"></div>
+                  <div class="heat-cell lvl-4" title="Oct 17"></div>
+                  <div class="heat-cell lvl-4" title="Oct 18"></div>
+                  <div class="heat-cell lvl-4" title="Oct 19"></div>
+                  <div class="heat-cell lvl-2" title="Oct 20"></div>
+                  <div class="heat-cell lvl-1" title="Oct 21"></div>
+
+                  <div class="heat-cell lvl-4" title="Oct 22"></div>
+                  <div class="heat-cell lvl-4" title="Oct 23"></div>
+                  <div class="heat-cell lvl-4" title="Oct 24"></div>
+                  <div class="heat-cell lvl-4" title="Oct 25"></div>
+                  <div class="heat-cell lvl-4" title="Oct 26"></div>
+                  <div class="heat-cell lvl-4" title="Oct 27 (Today: 14 commits)"></div>
+                  <div class="heat-cell lvl-0"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deep Work & Cognitive Allocation -->
+            <div class="analytics-telemetry-dual">
+              
+              <!-- Time Allocation Breakdown -->
+              <div class="telemetry-card">
+                <div class="card-title-banner">
+                  <div class="banner-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-primary)" stroke-width="2" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>Time & Focus Allocation</span>
+                  </div>
+                  <span class="banner-badge badge-cyan">44h / Week</span>
+                </div>
+
+                <div class="time-allocation-stack">
+                  <div class="alloc-item">
+                    <div class="alloc-head">
+                      <span>Deep Architecture & Systems Coding</span>
+                      <span class="alloc-hrs">19.5h (44%)</span>
+                    </div>
+                    <div class="css-progress-track">
+                      <div class="css-progress-fill" style="width: 44%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="alloc-item">
+                    <div class="alloc-head">
+                      <span>Creative 3D Web & UI Implementation</span>
+                      <span class="alloc-hrs">11.5h (26%)</span>
+                    </div>
+                    <div class="css-progress-track">
+                      <div class="css-progress-fill" style="width: 26%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="alloc-item">
+                    <div class="alloc-head">
+                      <span>Scientific Papers & AI Modeling Research</span>
+                      <span class="alloc-hrs">8.0h (18%)</span>
+                    </div>
+                    <div class="css-progress-track">
+                      <div class="css-progress-fill" style="width: 18%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="alloc-item">
+                    <div class="alloc-head">
+                      <span>Technical Mentorship & Code Review</span>
+                      <span class="alloc-hrs">5.0h (12%)</span>
+                    </div>
+                    <div class="css-progress-track">
+                      <div class="css-progress-fill" style="width: 12%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Habit Consistency Radar Matrix -->
+              <div class="telemetry-card">
+                <div class="card-title-banner">
+                  <div class="banner-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--violet-light)" stroke-width="2" aria-hidden="true">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                    <span>Habit Discipline Scorecard</span>
+                  </div>
+                  <span class="banner-badge badge-violet">Daily Tracking</span>
+                </div>
+
+                <div class="time-allocation-stack">
+                  <div class="alloc-item">
+                    <div class="alloc-head">
+                      <span>Algorithmic Practice & Problem Solving</span>
+                      <span class="alloc-hrs">98% Consistency</span>
+                    </div>
+                    <div class="css-progress-track">
+                      <div class="css-progress-fill" style="width: 98%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="alloc-item">
+                    <div class="alloc-head">
+                      <span>Continuous Reading (Systems & Philosophy)</span>
+                      <span class="alloc-hrs">94% Consistency</span>
+                    </div>
+                    <div class="css-progress-track">
+                      <div class="css-progress-fill" style="width: 94%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="alloc-item">
+                    <div class="alloc-head">
+                      <span>Aerobic Endurance / Physical Training</span>
+                      <span class="alloc-hrs">91% Consistency</span>
+                    </div>
+                    <div class="css-progress-track">
+                      <div class="css-progress-fill" style="width: 91%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="alloc-item">
+                    <div class="alloc-head">
+                      <span>Zero Distraction Focus Blocks (90m)</span>
+                      <span class="alloc-hrs">88% Consistency</span>
+                    </div>
+                    <div class="css-progress-track">
+                      <div class="css-progress-fill" style="width: 88%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- ==================================================================
+             SECTION 8: COMPARISONS & YEAR-OVER-YEAR TELEMETRY
+             ================================================================== -->
+        <section id="comparisons" class="section-wrapper">
+          
+          <div class="section-header-block">
+            <div class="section-title-wrap">
+              <div class="section-eyebrow">Macro Growth Metrics</div>
+              <h2 class="section-heading">Year-over-Year Progression & Telemetry</h2>
+              <p class="section-desc">Quantitative benchmarking comparing 2024 baselines, 2025 milestones, and 2026 targets.</p>
+            </div>
+            <span class="section-meta-tag">BENCHMARK // 3-YEAR AUDIT</span>
+          </div>
+
+          <div class="comparisons-card-wrap">
+            <div class="yoy-table-container">
+              <table class="yoy-telemetry-table">
+                <thead>
+                  <tr>
+                    <th>Performance Vector</th>
+                    <th>2024 Actual</th>
+                    <th>2025 Actual</th>
+                    <th>2026 YTD Actual</th>
+                    <th>2026 Target</th>
+                    <th>YoY Delta</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="vector-name">Production Deployments</td>
+                    <td class="val-prev">18 releases</td>
+                    <td class="val-prev">32 releases</td>
+                    <td class="val-current">48 releases</td>
+                    <td class="val-target">50 releases</td>
+                    <td><span class="growth-tag">+50.0% &uarr;</span></td>
+                  </tr>
+                  <tr>
+                    <td class="vector-name">Annual Open Source Commits</td>
+                    <td class="val-prev">840 commits</td>
+                    <td class="val-prev">1,120 commits</td>
+                    <td class="val-current">1,452 commits</td>
+                    <td class="val-target">1,500 commits</td>
+                    <td><span class="growth-tag">+29.6% &uarr;</span></td>
+                  </tr>
+                  <tr>
+                    <td class="vector-name">System Concurrency Throughput</td>
+                    <td class="val-prev">450k req/s</td>
+                    <td class="val-prev">1.8M req/s</td>
+                    <td class="val-current">4.2M req/s</td>
+                    <td class="val-target">5.0M req/s</td>
+                    <td><span class="growth-tag">+133.3% &uarr;</span></td>
+                  </tr>
+                  <tr>
+                    <td class="vector-name">Mean p99 Edge Latency</td>
+                    <td class="val-prev">84ms</td>
+                    <td class="val-prev">42ms</td>
+                    <td class="val-current">28ms</td>
+                    <td class="val-target">25ms</td>
+                    <td><span class="growth-tag">-33.3% &darr; (Faster)</span></td>
+                  </tr>
+                  <tr>
+                    <td class="vector-name">Deep Work Hours Logged</td>
+                    <td class="val-prev">1,620 hrs</td>
+                    <td class="val-prev">1,880 hrs</td>
+                    <td class="val-current">2,040 hrs</td>
+                    <td class="val-target">2,100 hrs</td>
+                    <td><span class="growth-tag">+8.5% &uarr;</span></td>
+                  </tr>
+                  <tr>
+                    <td class="vector-name">Technical Papers Published</td>
+                    <td class="val-prev">1 paper</td>
+                    <td class="val-prev">3 papers</td>
+                    <td class="val-current">5 papers</td>
+                    <td class="val-target">6 papers</td>
+                    <td><span class="growth-tag">+66.7% &uarr;</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- ==================================================================
+             SECTION 9: CONTACT TRANSMISSION TERMINAL
+             ================================================================== -->
+        <section id="contact" class="section-wrapper">
+          
+          <div class="section-header-block">
+            <div class="section-title-wrap">
+              <div class="section-eyebrow">Encrypted Uplink</div>
+              <h2 class="section-heading">Command Center Transmission Terminal</h2>
+              <p class="section-desc">Initiate communication for high-impact systems architecture, technical advisory, or engineering leadership.</p>
+            </div>
+            <span class="section-meta-tag">CHANNEL // SECURE_SSL</span>
+          </div>
+
+          <div class="contact-terminal-grid">
+            
+            <!-- Direct Frequency Coordinates -->
+            <div class="terminal-info-card">
+              <h3 class="terminal-headline">Direct Frequencies</h3>
+              <p class="bio-paragraph">
+                Available for principal architectural contracts, keynotes on distributed systems, and collaborative technical advisory.
+              </p>
+
+              <div class="channel-list">
+                
+                <a href="mailto:sarthak@example.com" class="channel-item">
+                  <div class="channel-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="channel-text">
+                    <span class="channel-label">ELECTRONIC DISPATCH</span>
+                    <span class="channel-val">sarthak@chaudhary.io</span>
+                  </div>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="channel-item">
+                  <div class="channel-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                    </svg>
+                  </div>
+                  <div class="channel-text">
+                    <span class="channel-label">PROFESSIONAL NETWORK</span>
+                    <span class="channel-val">linkedin.com/in/sarthak-chaudhary</span>
+                  </div>
+                </a>
+
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="channel-item">
+                  <div class="channel-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"></path>
+                    </svg>
+                  </div>
+                  <div class="channel-text">
+                    <span class="channel-label">SOURCE REPOSITORY</span>
+                    <span class="channel-val">github.com/chaudharysarthak</span>
+                  </div>
+                </a>
+
+              </div>
+
+              <!-- PGP Fingerprint Box -->
+              <div class="pgp-security-box">
+                <span class="pgp-label">PGP PUBLIC KEY FINGERPRINT</span>
+                <span class="pgp-fingerprint">8F2D A471 90B2 3C88 E549 110F 77A2 C901 B4DE 9912</span>
+              </div>
+            </div>
+
+            <!-- Transmission Form -->
+            <div class="terminal-form-card">
+              <div class="terminal-top-bar">
+                <div class="terminal-dots">
+                  <span class="t-dot t-dot-red"></span>
+                  <span class="t-dot t-dot-yellow"></span>
+                  <span class="t-dot t-dot-green"></span>
+                </div>
+                <span>CONSOLE // DISPATCH_UPLINK.SH</span>
+              </div>
+
+              <form action="#hero" method="GET" class="transmission-form">
+                
+                <div class="form-group-field">
+                  <label for="contact-name" class="field-label">Sender Identity / Name</label>
+                  <input type="text" id="contact-name" name="name" required placeholder="Dr. Jane Doe // Engineering VP" class="field-input">
+                </div>
+
+                <div class="form-group-field">
+                  <label for="contact-email" class="field-label">Transmission Frequency / Email</label>
+                  <input type="email" id="contact-email" name="email" required placeholder="jane.doe@enterprise.io" class="field-input">
+                </div>
+
+                <div class="form-group-field">
+                  <label for="contact-subject" class="field-label">Mission Clearance / Subject</label>
+                  <select id="contact-subject" name="subject" class="field-select">
+                    <option value="architecture">Systems Architecture Consulting</option>
+                    <option value="advisory">Technical Advisory / Board</option>
+                    <option value="keynote">Conference Keynote / Speaking</option>
+                    <option value="research">Academic & Research Collaboration</option>
+                    <option value="general">Direct Inquiries</option>
+                  </select>
+                </div>
+
+                <div class="form-group-field">
+                  <label for="contact-message" class="field-label">Encrypted Payload / Message</label>
+                  <textarea id="contact-message" name="message" required placeholder="Specify system constraints, timeline requirements, and scope of engagement..." class="field-textarea"></textarea>
+                </div>
+
+                <button type="submit" class="btn-cyber-primary" style="justify-content:center; width:100%;">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span>Dispatch Transmission</span>
+                </button>
+
+              </form>
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+
+      <!-- ====================================================================
+           FOOTER & COMMAND DECK
+           ==================================================================== -->
+      <footer class="command-center-footer">
+        
+        <div class="footer-left-info">
+          <div class="footer-copy">&copy; 2026 Sarthak Chaudhary. All architectural rights reserved.</div>
+          <div class="footer-subtext">BUILT WITH PURE HTML5 &amp; CSS3 // ZERO JAVASCRIPT RUNTIME // 120 FPS COMPOSITOR</div>
+        </div>
+
+        <div class="footer-nav-links">
+          <a href="#overview" class="footer-nav-link">Overview</a>
+          <a href="#about" class="footer-nav-link">About</a>
+          <a href="#skills" class="footer-nav-link">Skills</a>
+          <a href="#projects" class="footer-nav-link">Projects</a>
+          <a href="#goals" class="footer-nav-link">Goals</a>
+          <a href="#achievements" class="footer-nav-link">Achievements</a>
+          <a href="#analytics" class="footer-nav-link">Analytics</a>
+          <a href="#comparisons" class="footer-nav-link">Comparisons</a>
+          <a href="#contact" class="footer-nav-link">Contact</a>
+        </div>
+
+        <a href="#hero" class="back-to-top-btn" title="Ascend to Command Peak">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+          <span>ASCEND &uarr;</span>
+        </a>
+
+      </footer>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
